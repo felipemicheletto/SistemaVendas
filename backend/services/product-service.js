@@ -1,0 +1,3 @@
+function getAllProducts() {
+    return 'users'
+}

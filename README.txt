@@ -1,10 +1,9 @@
 Inicialização
 
-Primeira alteração
+Javascript puro -> Frontend (criação de telas)
 
+NodeJS -> Backend (comunicação com banco de dados)
 
-Alterações na aula
-
-Segunda alteração Cayo
-
-Terceira alteração Bruno
+Banco de dados:
+    1 - JSON -> JavaScript Object Notation
+    2 - Tabelas relacionadas -> SQL
