@@ -13,5 +13,10 @@
         "name": "Felipe",
         "login": "felipe123",
         "senha": "123"
+    },
+    {
+        "name": "Teste",
+        "login": "teste123",
+        "senha": "teste"
     }
 ]
