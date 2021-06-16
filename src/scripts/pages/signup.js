@@ -41,9 +41,9 @@ function validarNome() {
         }
 
         function validarConfirmar() {
-            var Confirmar = $("Confirmar").val();
+            var Confirmar = $("#Confirmar").val();
             if (Confirmar != Senha ) {
-                $("ConfirmarError").css("display", "block" )
+                $("#ConfirmarError").css("display", "block" )
                 return false
             }
             $("ConfirmarError").hide()
