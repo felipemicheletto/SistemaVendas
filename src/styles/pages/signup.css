@@ -1,3 +1,14 @@
+html {
+    text-align: center; 
+
+}
+
+body {
+    width: 700px; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
 form {
     
     margin: 0 auto;
@@ -6,6 +17,7 @@ form {
     padding: 100px;
     border: 1px solid #CCC;
     border-radius: 10px;
+    
 }
 
 form div + div {
@@ -53,4 +65,12 @@ textarea {
 button {
     
     margin-left: 5px;
+}
+
+html {
+    line-height: 1.5;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-weight: normal;
+    color: #ff0000; 
+
 }
