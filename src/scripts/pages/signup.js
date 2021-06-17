@@ -1,4 +1,4 @@
-$("button").click(function() {
+$("#sendBtn").click(function() {
     var NomeValidation = validarNome(); 
     var SobrenomeValidation = validarSobrenome();
     var emailValidation = validaremail();
