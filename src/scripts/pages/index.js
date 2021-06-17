@@ -4,5 +4,5 @@ function login() {
     var respLogin = serviceValidateLogin(user,pass)
     console.log(respLogin)
     
-    //window.location.href="./src/views/pages/signup.html"
 }
+
