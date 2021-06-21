@@ -1,3 +1,4 @@
-$("myButton3").click(function() {
-    localStorage ("user","")
-    window.location.href="página de login"
+$("#BotaoSair").click(function() {
+    localStorage.setItem("userData","")
+    window.location.href="../../../index.html"
+})
