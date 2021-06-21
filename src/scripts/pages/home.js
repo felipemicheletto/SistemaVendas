@@ -1,4 +1,4 @@
-function redirect() {
-    window.open('http://www.google.com'); // Links do footer
-}
-
+$("#BotaoSair").click(function() {
+    localStorage.setItem("userData","")
+    window.location.href="../../../index.html"
+})
