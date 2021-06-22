@@ -7,16 +7,43 @@
     <title>Home</title>
 </head>
 <body>
+    <!-- MODAIS -->
+    <div class="modais">
+        <div id="tabela1" class="modal">
+            <div class="modal-content">
+                <h4>Produtos X</h4>
+                <p>TABELA DE PRODUTOS X</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+            </div>
+        </div> 
+        <div id="modalSair" class="modal">
+            <div class="modal-content">
+                <h4>Sair do sistema</h4>
+                <p>Deseja realmente sair?</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" id="BotaoSair" class="modal-close waves-effect waves-green btn-flat">Sim</a>
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
+            </div>
+        </div> 
+    </div>
+
+
+
     <nav>
         <div class="nav-wrapper">
-        <a href="#" class="brand-logo"></a>
-        <img class="imagem" src ="../../assets/logo/logo.png"> </img>
-        <div>
+            <img class="imagem" src="../../assets/logo/logo.png">
             <h5 class="center-align">Sistma de Vendas</h5>
-            
+            <a class="myButton3 modal-trigger" href="#modalSair">Sair</a>
         </div>
-        <a id="BotaoSair" href="#" class="myButton3">SAIR</a>
+    </nav>
 
+    <div class="main">
+        <a class="waves-effect waves-light btn modal-trigger" href="#tabela1">Modal</a>
+        
+    </div>
 
         <footer class="page-footer">
             <div class="container">

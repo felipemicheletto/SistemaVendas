@@ -1,5 +1,7 @@
 .nav-wrapper {
     position: fixed;
+	display: flex;
+	justify-content: space-between;
 }
 
 .myButton3 {
@@ -15,6 +17,7 @@
 	padding:9px 23px;
 	text-decoration:none;
 	text-shadow:0px -1px 0px #7a2a1d;
+	line-height: 43px;
 }
 .myButton3:hover {
 	background-color:#b34332;
@@ -26,5 +29,14 @@
 
 .imagem {
 	width: 70px;
-	padding: 0%;
+	padding: 0;
+}
+
+.main {
+	height: 70vh;
+	background-color: rgb(240, 240, 240);
+}
+
+#modalSair {
+	width: 500px !important;
 }

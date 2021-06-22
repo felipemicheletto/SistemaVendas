@@ -3,3 +3,7 @@
 input {
     width: 200px !important;
 }
+
+body {
+    height: 100vh;
+}
