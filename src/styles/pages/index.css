@@ -3,7 +3,7 @@
 	background-color:#2e466e;
 	border-radius:23px;
 	border:2px solid #1f2f47;
-	display:inline-block;
+	display:block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Times New Roman;
@@ -27,7 +27,7 @@
 	background-color:#74ad5a;
 	border-radius:23px;
 	border:2px solid #3b6e22;
-	display:inline-block;
+	display:block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Times New Roman;
@@ -44,3 +44,4 @@
 	position:relative;
 	top:1px;
 }
+

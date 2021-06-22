@@ -11,6 +11,13 @@ $("#sendBtn").click(function() {
     }
     
 })
+    $("#sendBtn").click(function() {
+        $("small").show()
+        e.preventDefault()
+    })
+
+
+
 
 function validarNome() {
     var nome = $("#nome").val(); 
