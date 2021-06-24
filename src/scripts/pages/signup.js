@@ -95,6 +95,11 @@ function validarNome() {
                     $("#CheckboxError").hide()
             return true
         }
+
+        $("#BotaoVoltar").click(function() {
+            window.location.href="../../../index.html"
+        
+        })
     
 
 

@@ -5,3 +5,8 @@ $(document).ready(function(){
         window.location.href="../../../index.html"
     })
 });
+
+$("#BotaoVoltar").click(function() {
+    window.location.href="../../../index.html"
+
+})
