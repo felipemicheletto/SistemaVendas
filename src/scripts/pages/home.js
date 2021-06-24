@@ -6,7 +6,3 @@ $(document).ready(function(){
     })
 });
 
-$("#BotaoVoltar").click(function() {
-    window.location.href="../../../index.html"
-
-})
