@@ -1,26 +1,58 @@
 [
     {
-        "name": "Produto1",
-        "categoria": "Produto1",
-        "valorVenda": "Produto1",
-        "valorCompra": "Produto1"
+        "tableName": "Tabela 1",
+        "data": 
+        {
+            "Marca":["Renault","Renault","Renault","Renault","Renault","Renault","Chevrolet","Chevrolet","Chevrolet"],
+            "Veículo":["Carro","Carro","Carro","Carro","Carro","Carro","Carro","Carro","Carro"],
+            "Preço":[" R$ 10.025,13 "," R$ 18.217,22 "," R$ 58.164,34 "," R$ 54.021,98 "," R$ 71.365,98 "," R$ 28.346,40 "," R$ 11.049,75 "," R$ 96.153,15 "," R$ 16.328,63 "],
+            "Ano fabricação":[2020,2020,2020,2020,2020,2020,2020,2020,2020]
+        }
     },
     {
-        "name": "Produto1",
-        "categoria": "Produto1",
-        "valorVenda": "Produto1",
-        "valorCompra": "Produto1"
+        "tableName": "Tabela 2",
+        "data": 
+        {
+            "Marca":["Renault","Renault","Renault","Renault","Renault","Renault","Chevrolet","Chevrolet","Chevrolet"],
+            "Veículo":["Carro 2","Carro 2","Carro 2","Carro 2","Carro 2","Carro 2","Carro 2","Carro 2","Carro 2"],
+            "Preço":[" R$ 27.385,44 "," R$ 25.412,56 "," R$ 93.943,38 "," R$ 72.876,99 "," R$ 21.399,08 "," R$ 88.326,33 "," R$ 10.768,20 "," R$ 94.679,46 "," R$ 26.337,34 "],
+            "Ano fabricação":[2021,2021,2021,2021,2021,2021,2021,2021,2021]
+        }
     },
     {
-        "name": "Produto1",
-        "categoria": "Produto1",
-        "valorVenda": "Produto1",
-        "valorCompra": "Produto1"
+        "tableName": "Tabela 3",
+        "data": {
+            "col1": []
+        }
     },
     {
-        "name": "Produto1",
-        "categoria": "Produto1",
-        "valorVenda": "Produto1",
-        "valorCompra": "Produto1"
+        "tableName": "Tabela X",
+        "data": {
+            "col1": []
+        }
+    },
+    {
+        "tableName": "Tabela X",
+        "data": {
+            "col1": []
+        }
+    },
+    {
+        "tableName": "Tabela X",
+        "data": {
+            "col1": []
+        }
+    },
+    {
+        "tableName": "Tabela X",
+        "data": {
+            "col1": []
+        }
+    },
+    {
+        "tableName": "Tabela X",
+        "data": {
+            "col1": []
+        }
     }
 ]
