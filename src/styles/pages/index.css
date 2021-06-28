@@ -53,17 +53,24 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+	margin: 15px 0px;
 }
 
 .myButton2 {
 	position:absolute;
-	margin:0px;
+	margin: 15px;
 	padding: 15px 32px;
+	
 
 }
 
 body {
-	margin-left: auto;
-    margin-right: auto;
-    width: 6em
+	width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+	
 }
