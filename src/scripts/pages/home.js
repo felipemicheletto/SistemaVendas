@@ -8,11 +8,11 @@ $(document).ready(function(){
 });
 
 function loadProducts() {
-    var produtos = getAllProducts()
-    produtos.forEach(element => {
+    var produtos = getAllProducts();
+    produtos.forEach((element, i, array) => {
         var id = element.tableName.replace(" ","")
-        createModal(element.data, id, element.tableName) 
         createCard(element.tableName, id)
+        createModal(element.data, id, element.tableName)
     });
 }
 
@@ -38,17 +38,63 @@ function createCard(title, id) {
 }
 
 function createModal(data, id, title) {
+    var tableHeaders ='<tr>'
+    console.log(data)
+    for (const [key, value] of Object.entries(data)) {
+        console.log(`${key}: ${value}`);
+        tableHeaders += `<th>${key}</th>`
+    }
+    tableHeaders += '</tr>'
+
+    var tableContent = '<tr><td>aaaa</td></tr>';
+
     $(".modais").append(
-        `
-        <div id="${id}" class="modal">
+        `<div id="${id}" class="modal">
+            <div class="modal-header">
+                <h4 class="table-title">${title}</h4>
+                <a class="modal-close p-10">
+                    <i class="material-icons">close</i>
+                </a>
+            </div>
             <div class="modal-content">
-                <h4>${title}</h4>
-                <p>TABELA DE PRODUTOS ${title}</p>
+                <table id="table-${id}" class="striped">
+                `+tableHeaders+ tableContent+`
+                </table>
             </div>
             <div class="modal-footer">
-                <a href="#" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                <a href="#!" id="BotaoSair" class="modal-close waves-effect waves-green btn-flat">Visitar página</a>
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Baixar tabela</a>
             </div>
-        </div> 
+        </div>
         `
     )
+    $('.modal').modal();
 }
+
+
+
+/*                  <tr>
+                        <th>Cabeçalho 1</th>
+                        <th>Cabeçalho 2</th>
+                        <th>Cabeçalho 3</th>
+                    </tr>
+                    <tr>
+                        <td>Data Linha 1</td>
+                        <td>Data Linha 1</td>
+                        <td>Data Linha 1</td>
+                    </tr>                    
+                    <tr>
+                        <td>Data Linha 2</td>
+                        <td>Data Linha 2</td>
+                        <td>Data Linha 2</td>
+                    </tr>                    
+                    <tr>
+                        <td>Data Linha 3</td>
+                        <td>Data Linha 3</td>
+                        <td>Data Linha 3</td>
+                    </tr>                    
+                    <tr>
+                        <td>Data Linha 4</td>
+                        <td>Data Linha 4</td>
+                        <td>Data Linha 4</td>
+                    </tr>*/

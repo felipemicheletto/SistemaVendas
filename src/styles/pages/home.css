@@ -70,3 +70,13 @@ nav {
     color: #fff;
     background-color: #26a69a;
 }
+
+.table-title {
+	margin: 20px !important;
+	text-align: center;
+	width: 100%;
+}
+
+.modal-header {
+	display: flex;
+}
