@@ -82,8 +82,12 @@ nav {
 }
 
 .main {
-    min-height: 70vh !important;
-    background-color: rgb(240, 240, 240);
+    min-height: 70vh;
+	height: auto;
+    background-color: rgb(240, 240, 240);	
+}
+
+.all-cards {
 	display: flex;
 	flex-wrap: wrap;
     vertical-align: middle;

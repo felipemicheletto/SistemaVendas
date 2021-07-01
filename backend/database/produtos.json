@@ -13,7 +13,7 @@
         "tableName": "Tabela 2",
         "data": 
         {
-            "Marca":["Renault","Renault","Renault","Renault","Renault","Renault","Chevrolet","Chevrolet","Chevrolet"],
+            "Marca":["Renault 1","Renault 2","Renault 3","Renault","Renault","Renault","Chevrolet","Chevrolet","Chevrolet"],
             "Veículo":["Carro 2","Carro 2","Carro 2","Carro 2","Carro 2","Carro 2","Carro 2","Carro 2","Carro 2"],
             "Preço":[" R$ 27.385,44 "," R$ 25.412,56 "," R$ 93.943,38 "," R$ 72.876,99 "," R$ 21.399,08 "," R$ 88.326,33 "," R$ 10.768,20 "," R$ 94.679,46 "," R$ 26.337,34 "],
             "Ano fabricação":[2021,2021,2021,2021,2021,2021,2021,2021,2021]

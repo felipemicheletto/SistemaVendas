@@ -13,24 +13,25 @@ function loadProducts() {
         var id = element.tableName.replace(" ","")
         createCard(element.tableName, id)
         createModal(element.data, id, element.tableName)
+        localStorage.setItem(id, JSON.stringify(element.data))
     });
 }
 
 
 function createCard(title, id) {
-    $(".main").append(
+    $(".all-cards").append(
         `
         <div class="row">
             <div class="col s12">
-            <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-                <span class="card-title">${title}</span>
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">${title}</span>
+                        </div>
+                        <div class="card-action">
+                        <a class="modal-trigger" href="#${id}">Ver Tabela</a>
+                        <a href="#">Acessar produto</a>
+                    </div>
                 </div>
-                <div class="card-action">
-                <a class="modal-trigger" href="#${id}">Ver Tabela</a>
-                <a href="#">Acessar produto</a>
-                </div>
-            </div>
             </div>
         </div>
         `
@@ -39,14 +40,22 @@ function createCard(title, id) {
 
 function createModal(data, id, title) {
     var tableHeaders ='<tr>'
-    console.log(data)
+    var dataArray;
     for (const [key, value] of Object.entries(data)) {
-        console.log(`${key}: ${value}`);
-        tableHeaders += `<th>${key}</th>`
+        dataArray = value;
+        tableHeaders += `<th>${key}</th>`;
     }
     tableHeaders += '</tr>'
-
-    var tableContent = '<tr><td>aaaa</td></tr>';
+    
+    
+    var tableContent = '';
+    for (var i = 0; i < dataArray.length; i++) {
+        tableContent += '<tr>';
+        for (const [key, value] of Object.entries(data)) {
+            tableContent += `<td>${value[i]}</td>`
+        }
+        tableContent += '</tr>'
+    }
 
     $(".modais").append(
         `<div id="${id}" class="modal">
@@ -62,7 +71,7 @@ function createModal(data, id, title) {
                 </table>
             </div>
             <div class="modal-footer">
-                <a href="#!" id="BotaoSair" class="modal-close waves-effect waves-green btn-flat">Visitar página</a>
+                <a data-atributte="${id}" data-atributteTitle="${title}" href="#!" onclick="showTable(this)" class="modal-close waves-effect waves-green btn-flat">Visitar página</a>
                 <a href="#!" class="modal-close waves-effect waves-green btn-flat">Baixar tabela</a>
             </div>
         </div>
@@ -71,30 +80,10 @@ function createModal(data, id, title) {
     $('.modal').modal();
 }
 
-
-
-/*                  <tr>
-                        <th>Cabeçalho 1</th>
-                        <th>Cabeçalho 2</th>
-                        <th>Cabeçalho 3</th>
-                    </tr>
-                    <tr>
-                        <td>Data Linha 1</td>
-                        <td>Data Linha 1</td>
-                        <td>Data Linha 1</td>
-                    </tr>                    
-                    <tr>
-                        <td>Data Linha 2</td>
-                        <td>Data Linha 2</td>
-                        <td>Data Linha 2</td>
-                    </tr>                    
-                    <tr>
-                        <td>Data Linha 3</td>
-                        <td>Data Linha 3</td>
-                        <td>Data Linha 3</td>
-                    </tr>                    
-                    <tr>
-                        <td>Data Linha 4</td>
-                        <td>Data Linha 4</td>
-                        <td>Data Linha 4</td>
-                    </tr>*/
+function showTable (button) {
+    var data = JSON.parse(localStorage.getItem(button.attributes[0].value))
+    var title = button.attributes[1].value
+    console.log(title, data)
+    $(".all-cards").hide()
+    $(".table-page").show()
+}
