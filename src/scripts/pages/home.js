@@ -56,6 +56,7 @@ function createModal(data, id, title) {
         }
         tableContent += '</tr>'
     }
+    
 
     $(".modais").append(
         `<div id="${id}" class="modal">
@@ -67,7 +68,7 @@ function createModal(data, id, title) {
             </div>
             <div class="modal-content">
                 <table id="table-${id}" class="striped">
-                `+tableHeaders+ tableContent+`
+                `+tableHeaders+ tableContent+ tablepageheader+ PageContent+`
                 </table>
             </div>
             <div class="modal-footer">
@@ -87,3 +88,35 @@ function showTable (button) {
     $(".all-cards").hide()
     $(".table-page").show()
 }
+
+function tablePage (data) {
+    var tablepageheader ='<tr>'
+    var dataArray;
+    for (const [key, value] of Object.entries(data)) {
+        dataArray = value;
+        tablepageheader += `<th>${key}</th>`;
+    }
+    tablepageheader += '</tr>'
+    
+    
+    var PageContent = '';
+    for (var i = 0; i < dataArray.length; i++) {
+        PageContent += '<tr>';
+        for (const [key, value] of Object.entries(data)) {
+            PageContent += `<td>${value[i]}</td>`
+        }
+        PageContent += '</tr>'
+    }
+
+    $(".table-page").append(
+        `<div id="${table-page}" class="modal">
+            <div class="modal-header">
+            <h4 class="table-title">${table-page}</h4>
+            <a class="modal-close p-10">
+                <i class="material-icons">close</i>
+            </a>
+        </div>
+
+
+}
+
