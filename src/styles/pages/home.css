@@ -2,6 +2,7 @@
     position: fixed;
 	display: flex;
 	justify-content: space-between;
+	
 }
 
 .myButton3 {
@@ -146,3 +147,25 @@ border-radius: 10px;
     color: black;
 }
 
+nav {
+    color: #fff;
+    background-color: rgb(51 63 79);
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+}
+
+.navbar2 {
+	background-color:rgb(180 198 213)
+}
+
+.myButton3 {
+	background-color:rgb(47 118 181)
+
+}
+
+.page-footer {
+    padding-top: 20px;
+    color: #fff;
+    background-color: rgb(51 63 79);
+}
