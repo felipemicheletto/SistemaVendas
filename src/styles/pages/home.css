@@ -119,4 +119,19 @@ nav {
   min-width: 400px;
 }
 
+.navbar-brand {
+text-align: center;
+letter-spacing: 3px;
+word-spacing: 5px;
+margin-left: auto;
+left: auto;
+right: auto;
+vertical-align: middle;
+padding: 0%;
+margin: 10px;
+height: auto;
+width: 700px; 
+border: 1px solid #CCC;
+border-radius: 10px;
+}
 
