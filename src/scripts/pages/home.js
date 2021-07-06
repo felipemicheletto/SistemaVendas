@@ -68,7 +68,7 @@ function createModal(data, id, title) {
             </div>
             <div class="modal-content">
                 <table id="table-${id}" class="striped">
-                `+tableHeaders+ tableContent+ tablepageheader+ PageContent+`
+                `+tableHeaders+ tableContent+ `
                 </table>
             </div>
             <div class="modal-footer">
@@ -84,12 +84,12 @@ function createModal(data, id, title) {
 function showTable (button) {
     var data = JSON.parse(localStorage.getItem(button.attributes[0].value))
     var title = button.attributes[1].value
-    console.log(title, data)
+    tablePage(title, data)
     $(".all-cards").hide()
     $(".table-page").show()
 }
 
-function tablePage (data) {
+function tablePage(title, data) {
     var tablepageheader ='<tr>'
     var dataArray;
     for (const [key, value] of Object.entries(data)) {
@@ -97,8 +97,7 @@ function tablePage (data) {
         tablepageheader += `<th>${key}</th>`;
     }
     tablepageheader += '</tr>'
-    
-    
+
     var PageContent = '';
     for (var i = 0; i < dataArray.length; i++) {
         PageContent += '<tr>';
@@ -108,15 +107,13 @@ function tablePage (data) {
         PageContent += '</tr>'
     }
 
-    $(".table-page").append(
-        `<div id="${table-page}" class="modal">
-            <div class="modal-header">
-            <h4 class="table-title">${table-page}</h4>
-            <a class="modal-close p-10">
-                <i class="material-icons">close</i>
-            </a>
-        </div>
-
-
+    $(".table-page").html(`
+        <h2>${title}</h2>
+        <button onclick="showCards()">Voltar</button>
+        `)
 }
 
+function showCards() {
+    $(".all-cards").show()
+    $(".table-page").hide()
+}
