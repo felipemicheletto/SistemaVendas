@@ -33,11 +33,6 @@
 	padding: 0;
 }
 
-.main {
-	height: 70vh;
-	background-color: rgb(240, 240, 240);
-}
-
 #modalSair {
 	width: 500px !important;
 }
@@ -83,9 +78,14 @@ nav {
 }
 
 .main {
-    min-height: 70vh;
-	height: auto;
-    background-color: rgb(240, 240, 240);	
+    height: 70vh;
+    background-color: rgb(240, 240, 240);
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10px ;
+    vertical-align: middle;
+	padding: 0%;
+	
 }
 
 .all-cards {
@@ -94,6 +94,7 @@ nav {
     vertical-align: middle;
 	padding: 0%;
 	width: 100%;
+	
 }
 
 
@@ -122,7 +123,8 @@ nav {
 
 .table-page {
 	text-align: center;
-	
+	height: auto;
+	margin-top: 10px ;
 }
 
 .navbar-brand {
@@ -157,6 +159,7 @@ nav {
 
 .navbar2 {
 	background-color:rgb(180 198 213)
+	
 }
 
 .myButton3 {
@@ -169,3 +172,5 @@ nav {
     color: #fff;
     background-color: rgb(51 63 79);
 }
+
+
