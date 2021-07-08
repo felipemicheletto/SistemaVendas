@@ -121,7 +121,7 @@ function showCards() {
 }
 
 $("#BotaoHome").click(function() {
-    window.location.href="../../../home.html"
+    window.location.href="../../../home.html#!"
 
 })
 
