@@ -141,3 +141,20 @@ nav {
 }
 
 
+
+.main {
+    height: 70vh;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    vertical-align: middle;
+    padding: 0%;
+	
+}
+
+.all-cards {
+	max-width: 100%;
+    float: left;
+
+}
