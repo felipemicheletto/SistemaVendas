@@ -84,7 +84,7 @@ function createModal(data, id, title) {
 function showTable (button) {
     var data = JSON.parse(localStorage.getItem(button.attributes[0].value))
     var title = button.attributes[1].value
-    tablePage(title, data)
+    //tablePage(title, data)
     $(".all-cards").hide()
     $(".table-page").show()
 }
@@ -109,6 +109,8 @@ function tablePage(title, data) {
 
     $(".table-page").html(`
         <h2>${title}</h2>
+        <th>${tablepageheader}</th>
+        <td>${PageContent}</td>
         <button onclick="showCards()">Voltar</button>
         `)
 }
@@ -117,3 +119,13 @@ function showCards() {
     $(".all-cards").show()
     $(".table-page").hide()
 }
+
+$("#BotaoHome").click(function() {
+    window.location.href="../../../home.html"
+
+})
+
+$("#BotaoNovoCadastro").click(function() {
+    window.location.href="../../../signup.html"
+
+})
