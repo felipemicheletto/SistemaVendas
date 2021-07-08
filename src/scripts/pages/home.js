@@ -108,10 +108,15 @@ function tablePage(title, data) {
     }
 
     $(".table-page").html(`
-        <h2>${title}</h2>
-        <th>${tablepageheader}</th>
+    <table>
+    <h2>Tabela 1</h2>
+    <tr>
+        <th>${tablepageheader} </th>
+    </tr>
+    <tr>
         <td>${PageContent}</td>
-        <button onclick="showCards()">Voltar</button>
+    </tr>
+    <button onclick="showCards()">Voltar</button>
         `)
 }
 
