@@ -55,14 +55,6 @@ nav {
 	
 }
 
-.all-cards {
-	display: flex;
-	flex-wrap: wrap;
-    vertical-align: middle;
-	padding: 0%;
-	width: 100%;
-	
-}
 
 
 .row .col {
@@ -110,11 +102,7 @@ border: 1px solid #CCC;
 border-radius: 10px;
 }
 
-.break {
-    flex-basis: 100%;
-    height: 0;
-    color: black;
-}
+
 
 nav {
     color: #fff;
@@ -140,8 +128,6 @@ nav {
     background-color: rgb(51 63 79);
 }
 
-
-
 .main {
     height: 70vh;
     background-color: rgb(240, 240, 240);
@@ -154,7 +140,28 @@ nav {
 }
 
 .all-cards {
+	display: flex;
+    vertical-align: middle;
+    padding: 0%;
+	width: 100%;
+	
+    
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+    color: black;
+}
+
+.all-cards {
 	max-width: 100%;
     float: left;
+    flex-wrap: wrap;
+    padding: 0%;
+	width: 100%;
+    vertical-align: middle;
 
 }
+
+
