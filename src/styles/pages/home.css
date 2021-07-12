@@ -45,7 +45,7 @@ nav {
 }
 
 .main {
-    height: 70vh;
+    min-height: 70vh;
     background-color: rgb(240, 240, 240);
 	display: flex;
 	flex-wrap: wrap;
@@ -138,23 +138,4 @@ nav {
     padding-top: 20px;
     color: #fff;
     background-color: rgb(51 63 79);
-}
-
-
-
-.main {
-    height: 70vh;
-    background-color: rgb(240, 240, 240);
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    vertical-align: middle;
-    padding: 0%;
-	
-}
-
-.all-cards {
-	max-width: 100%;
-    float: left;
-
 }

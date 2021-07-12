@@ -84,7 +84,7 @@ function createModal(data, id, title) {
 function showTable (button) {
     var data = JSON.parse(localStorage.getItem(button.attributes[0].value))
     var title = button.attributes[1].value
-    //tablePage(title, data)
+    tablePage(title, data)
     $(".all-cards").hide()
     $(".table-page").show()
 }
@@ -108,15 +108,12 @@ function tablePage(title, data) {
     }
 
     $(".table-page").html(`
-    <table>
-    <h2>Tabela 1</h2>
-    <tr>
-        <th>${tablepageheader} </th>
-    </tr>
-    <tr>
-        <td>${PageContent}</td>
-    </tr>
+    <h2>Tabela 1</h2>    
     <button onclick="showCards()">Voltar</button>
+    <table>
+        ${tablepageheader} 
+        ${PageContent}
+    </table>
         `)
 }
 
