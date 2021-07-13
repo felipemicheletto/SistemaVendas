@@ -12,3 +12,18 @@ body {
 .p-10 {
     padding: 10px !important;
 }
+
+#toast-container {
+    background-color: transparent !important;
+}
+
+.toast-danger {
+    background-color: red;
+    color: black;
+}
+.toast-warning {
+    background-color: orange;
+}
+.toast-success {
+    background-color: green;
+}
