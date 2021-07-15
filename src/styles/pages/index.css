@@ -114,4 +114,29 @@
 		display: block;
 	}
 
-	
+	.myButton2 {
+		position: absolute;
+		margin: 15px;
+		padding: 15px 32px;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 15px 0px;
+		height: 15px;
+		width: 120px;
+	}
+
+	body {
+		margin: 0px;
+		width: 100vw;
+		height: 100vh;
+		background: #6C7A89;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
