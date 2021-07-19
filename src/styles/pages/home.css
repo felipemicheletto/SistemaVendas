@@ -49,7 +49,6 @@ nav {
     background-color: rgb(240, 240, 240);
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 10px ;
     vertical-align: middle;
 	padding: 0%;
 	
@@ -191,5 +190,9 @@ button, input, optgroup, select, textarea {
     height: 40px;
     overflow: auto;
 }
+
+
+
+
 
 
