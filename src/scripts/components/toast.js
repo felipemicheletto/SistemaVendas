@@ -22,7 +22,7 @@ function openToast(msg, type) {
     M.toast({
         html: '<div class="azul">   <i class="material-icons">info</i>  <b>  Info  </b> </div>'  +  msg  + '</div>' ,
         classes: classe,
-        displayLength: 40000000000000
+        displayLength: 4000
     });
 
     M.toast({
@@ -30,4 +30,22 @@ function openToast(msg, type) {
         classes: classe,
         displayLength: 4000
     });
+
+    M.toast({
+        html: '<div class="azulbox">   <i class="material-icons">info</i>  </div>'  +  msg  + '</div>' ,
+        classes: classe,
+        displayLength: 4000
+    });
+
+    M.toast({
+        html: '<div class="verdebox">   <i class="material-icons">check</i>  </div>'  +  msg  + '</div>' ,
+        classes: classe,
+        displayLength: 4000
+        });
+
+    M.toast({
+        html: '<div class="amarelobox">   <i class="material-icons">warning</i>  </div>'  +  msg  + '</div>' ,
+        classes: classe,
+        displayLength: 4000
+        });
 }
