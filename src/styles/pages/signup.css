@@ -14,12 +14,26 @@ justify-content: center;
 align-items: center
 }
 .box {
-width: 445px;
-height: 490px;
-background: #fff;
+    width: 445px;
+    height: auto;
+    background: #fff;
+    padding: 35px;
+}
+.body {
+    margin: 50px;
+}
+.buttons {
+    margin: 15px 0px;
+}
+.btn {
+    line-height: 18px !important;
 }
 body {
 margin: 0px;
+}
+
+input {
+    width: 100%;
 }
 
 form {

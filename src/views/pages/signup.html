@@ -8,57 +8,46 @@
     <link rel="stylesheet" href="../../styles/pages/signup.css">
 </head>
 
-
-
 <body>
     <div class="body">
-    <div class="box">
-        <p>Escolha as opções a seguir</p>
-    <div class="input-field col s6">
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" />
-        <small id="NomeError">Nome Incompleto</small>
-    </div>
+        <div class="box">
+            <p>Escolha as opções a seguir</p>
+            <div class="input-field col s6">
+                <input type="text" id="nome" placeholder="Nome"/>
+                <small id="NomeError">Nome Incompleto</small>
+            </div>
 
-    <div class="input-field col s6">
-        <label for="sobrenome">Sobrenome</label>
-        <input type="text" id="sobrenome" />
-        <small id="SobrenomeError">Sobrenome Incompleto</small>
-    </div>
+            <div class="input-field col s6">
+                <input type="text" id="sobrenome" placeholder="Sobrenome"/>
+                <small id="SobrenomeError">Sobrenome Incompleto</small>
+            </div>
 
-    <div class="input-field col s6">
-        <label for="email">Email</label>
-        <input type="email" id="email" />
-        <small id="EmailError">Email Invalido</small>
-    </div>
+            <div class="input-field col s6">
+                <input type="email" id="email" placeholder="Email"/>
+                <small id="EmailError">Email Invalido</small>
+            </div>
 
-    <div class="input-field col s6">
-        <label for="Senha">Senha</label>
-        <input type="password" id="Senha" />
-        <small id="SenhaError">Senha Incompleta</small>
+            <div class="input-field col s6">
+                <input type="password" id="Senha" placeholder="Senha"/>
+                <small id="SenhaError">Senha Incompleta</small>
+            </div>
+            <div class="input-field col s6">
+                <input type="password" id="Confirmar" placeholder="Confirmar senha"/>
+                <small id="ConfirmarError">Senha Diferente</small>
+            </div>
+        <div>
+            <div class="cbx">
+                <input id="checkk" type="checkbox" class="filled-in"/>
+                <span class="allign"> Estou de acordo com os termos de uso</span>
+                <small id="CheckError">Checkbox não preenchida</small>
+            </div>
+            <div class="buttons">
+                <a id="sendBtn" class="waves-effect btn">Enviar</a>
+                <a id="BotaoVoltar" class="waves-effect btn">Voltar</a>
+            </div>
     </div>
-    <div class="input-field col s6">
-        <label for="Confirmar Senha">Confirmar Senha</label>
-        <input type="password" id="Confirmar"/>
-        <small id="ConfirmarError">Senha Diferente</small>
-        
-    </div>
-    
-
-    
-    <div>
-        <label>
-            <input id="checkk" type="checkbox" class="filled-in" />
-            <span class="allign"> Estou de acordo com os termos de uso</span>
-            <small id="CheckError">Checkbox não preenchida</small>
-            <a id="sendBtn" class="waves-effect waves-light btn">Enviar</a>
-            <a id="BotaoVoltar" class="waves-effect waves-light btn">Voltar</a>
-        </label>
-    </div>
-    
-</div>
-    
 </body>
+
 <script src="../../scripts/shared.js"></script>
 <script src="../../scripts/pages/signup.js"></script>
 
