@@ -40,10 +40,6 @@
 	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
 	background-color:#68a54b;
 }
-.myButton2:active {
-	position:relative;
-	top:1px;
-}
 
 .myButton {
 	border: none;
@@ -56,13 +52,6 @@
 	margin: 15px 0px;
 }
 
-.myButton2 {
-	position:absolute;
-	margin: 15px;
-	padding: 15px 32px;
-	
-
-}
 
 .container {
 	width: 100vw;
@@ -97,38 +86,9 @@
 		
 	}
 
-	.myButton2 {
-		position: absolute;
-		margin: 15px;
-		padding: 15px 32px;
-		border: none;
-		color: white;
-		padding: 15px 32px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 16px;
-		margin: 15px 0px;
-		height: 15px;
-		width: 120px;
-		display: block;
-	}
+	
 
-	.myButton2 {
-		position: absolute;
-		margin: 15px;
-		padding: 15px 32px;
-		border: none;
-		color: white;
-		padding: 15px 32px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 16px;
-		margin: 15px 0px;
-		height: 15px;
-		width: 120px;
-	}
+	
 
 	body {
 		margin: 0px;
@@ -149,42 +109,12 @@
 	}
 
 	
-.myButton2 {
-    position: absolute;
-    margin: 15px;
-    padding: 15px 32px;
-    border: none;
-    color: white;
-    padding: 14px 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 15px 3px;
-    height: 31px;
-    width: 120px;
-}
 
 input {
     width: 100% !important;
 }
 
-.myButton2 {
-    position: absolute;
-    margin: 15px;
-    padding: 15px 32px;
-    border: none;
-    color: white;
-    padding: 14px 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 15px 3px;
-    height: 31px;
-    width: 120px;
-    line-height: 3px;
-}
+
 
 .myButton {
     border: none;
@@ -199,6 +129,24 @@ input {
     width: 100px;
     line-height: 3px;
 }
+
+
+
+.myButton {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 3px;
+    height: 15px;
+    width: 100px;
+    line-height: 3px;
+}
+
+
 
 .myButton2 {
     position: absolute;
@@ -216,18 +164,3 @@ input {
     width: 120px;
     line-height: 3px;
 }
-
-.myButton {
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 15px 3px;
-    height: 15px;
-    width: 100px;
-    line-height: 3px;
-}
-
